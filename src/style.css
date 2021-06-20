@@ -1,15 +1,13 @@
 body {
   font-family: "Roboto Mono", monospace;
   margin: 20px auto;
-  border-color: #757a79;
-  border: 1px solid;
-  border-radius: 10px;
-  padding-bottom: 60px;
+  padding-bottom: 30px;
   background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
   color: #757a79;
   text-align: left;
   max-width: 600px;
 }
+
 h1,
 h2 {
   text-align: center;
@@ -31,6 +29,12 @@ ul {
 a {
   text-decoration-line: none;
   color: #757a79;
+}
+.container {
+  border-color: #757a79;
+  border: 1px solid;
+  border-radius: 10px;
+  padding-bottom: 40px;
 }
 .btn {
   margin-top: 30px;
@@ -62,4 +66,8 @@ a {
 }
 #weekdays {
   padding-top: 40px;
+}
+#open-sourced-info {
+  padding-top: 20px;
+  margin: 0 auto;
 }
