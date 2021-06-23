@@ -36,7 +36,7 @@ submitForm.addEventListener("click", searchBarResult);
 function celciusClick(event) {
   event.preventDefault();
   let currentTemp = document.querySelector("#temperature");
-  currentTemp.innerHTML = "17°";
+  currentTemp.innerHTML = "";
 }
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", celciusClick);
@@ -44,7 +44,7 @@ celciusLink.addEventListener("click", celciusClick);
 function fahrenheitClick(event) {
   event.preventDefault();
   let currentTemp = document.querySelector("#temperature");
-  currentTemp.innerHTML = "63°";
+  currentTemp.innerHTML = "";
 }
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", fahrenheitClick);
