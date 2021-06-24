@@ -57,10 +57,14 @@ function showTemperature(response) {
 function displayTemp(response) {
   console.log(response.data);
   let temperature = Math.round(response.data.main.temp);
-
+  let description = document.querySelector("#description");
   let currentTemp = document.querySelector("#temperature");
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+  let humidity = document.querySelector("#humidity");
+  let wind = document.querySelector("#wind");
+
+  wind.innerHTML = Math.round(response.data.wind.speed);
+  humidity.innerHTML = response.data.main.humidity;
+  description.innerHTML = response.data.weather[0].main;
   currentTemp.innerHTML = `${temperature} `;
 }
 
@@ -82,10 +86,16 @@ form.addEventListener("click", updateCity);
 function showTemperature(response) {
   let temperature = Math.round(response.data.main.temp);
   let currentTemp = document.querySelector("#temperature");
+  let cityName = document.querySelector(`#city-name`);
+  let description = document.querySelector("#description");
+  let humidity = document.querySelector("#humidity");
+  let wind = document.querySelector("#wind");
+
+  wind.innerHTML = Math.round(response.data.wind.speed);
+  humidity.innerHTML = response.data.main.humidity;
   currentTemp.innerHTML = `${temperature}`;
-  document.querySelector(`#city-name`).innerHTML = response.data.name;
-  document.querySelector("#description").innerHTML =
-    response.data.weather[0].main;
+  cityName.innerHTML = response.data.name;
+  description.innerHTML = response.data.weather[0].main;
 }
 
 function showPosition(position) {
