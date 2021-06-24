@@ -2,8 +2,8 @@ body {
   font-family: "Roboto Mono", monospace;
   margin: 20px auto;
   padding-bottom: 30px;
-  background: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
-  color: #757a79;
+  background: #dedee0;
+  color: rgb(123, 128, 126);
   text-align: left;
   max-width: 600px;
 }
@@ -49,8 +49,8 @@ a {
 }
 .today-forcast {
   font-size: 20px;
-  padding-top: 60px;
-  padding-left: 50px;
+  padding-top: 20px;
+  padding-left: 40px;
   text-align: left;
 }
 .col {
@@ -61,6 +61,9 @@ a {
 .units {
   font-size: 30px;
   padding-top: 40px;
+}
+#icon {
+  padding-left: 20px;
 }
 #weekdays {
   padding-top: 40px;
