@@ -62,6 +62,9 @@ a {
   font-size: 30px;
   padding-top: 40px;
 }
+#city-name {
+  text-transform: capitalize;
+}
 #icon {
   padding-left: 20px;
 }
