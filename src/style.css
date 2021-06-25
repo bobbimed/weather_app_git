@@ -47,6 +47,7 @@ a {
   font-size: 70px;
   margin-left: 20px;
 }
+
 .today-forcast {
   font-size: 20px;
   padding-top: 20px;
@@ -62,8 +63,15 @@ a {
   font-size: 30px;
   padding-top: 40px;
 }
+
 #city-name {
   text-transform: capitalize;
+}
+#celcius-link {
+  cursor: default;
+}
+#fahrenheit-link {
+  cursor: default;
 }
 #icon {
   padding-left: 20px;
