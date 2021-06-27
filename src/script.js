@@ -21,6 +21,34 @@ let days = [
 let day = days[now.getDay()];
 h2.innerHTML = `${day} ${hours}:${minutes}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#weekdays");
+  let days = ["Sun", "Mon", "Tues", "Wed"];
+  let forecastHTML = `<div class="row">`;
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      ` 
+        <div class="col-2">
+          <div class="weather-forecast">${day}</div>
+          <img
+            src="https://openweathermap.org/img/wn/10d@2x.png"
+            alt=""
+            width="40 "
+          />
+          <div class="forecast-temperatures">
+            <span class="weekday-high">74°</span>|<span class="weekday-low"
+              >65°</span
+            >
+          </div>
+        </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function searchBarResult(event) {
   event.preventDefault();
   let resultCity = document.querySelector("#city-look");
@@ -133,3 +161,5 @@ function getCurrentPosition(event) {
 
 let currentButton = document.querySelector("#current-location");
 currentButton.addEventListener("click", getCurrentPosition);
+
+displayForecast();
