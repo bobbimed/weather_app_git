@@ -61,11 +61,17 @@ a {
   margin: 0;
   padding: 5px;
 }
+.forecast-temperatures {
+  font-size: 14px;
+}
 .units {
   font-size: 30px;
   padding-top: 40px;
   position: relative;
   left: -35px;
+}
+.weekday-low {
+  opacity: 0.7;
 }
 
 #city-name {
@@ -84,6 +90,7 @@ a {
 #weekdays {
   padding-top: 40px;
 }
+
 #open-sourced-info {
   padding-top: 20px;
   margin: 0 auto;
